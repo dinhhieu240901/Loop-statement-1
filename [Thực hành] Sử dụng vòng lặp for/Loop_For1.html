@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("Nối 2 mảng bằng concat");
+      for (let i = 0; i <= 5; i++) {
+        console.log(
+          "The number is ".concat(i),
+          "\n"
+        ); /*  concat() nối 2 mảng lại với nhau */
+      }
+      console.log("-".repeat(148));
+      console.log("Sử dụng vòng lặp for");
+      for (let j = 0; j <= 5; j++) {
+        console.log("The number is " + j);
+      }
+      console.log("-".repeat(148));
+      console.log("Sử dụng ${}");
+      for (let k = 0; k <= 5; k++) {
+        console.log(`The number is ${k}`);
+      }
+      console.log("-".repeat(145));
+      console.log("Chèn giá trị biến num vào chuỗi number");
+
+      number = [0, 1, 2, 3, 4, 5];
+      for (const num of number) {
+        console.log(`the number is ${num}`);
+      }
+      console.log("-".repeat(145));
+      console.log("Sử dụng vòng lặp while");
+      n = 0;
+      while (n <= 5) {
+        console.log(`the number is ${n}`);
+        n++;
+      }
+      console.log("-".repeat(145));
+      console.log("Sử dụng vòng lặp lồng nhau");
+      for (let i = 0; i <= 5; i++) {
+        for (let j = 0; j <= 5; j++) {
+          console.log("The number is " + i);
+        }
+      }
+    </script>
+  </body>
+</html>
